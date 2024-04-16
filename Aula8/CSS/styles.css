@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-indent: 45px;
+}
+
+hr {
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+/* Statics - Header */
+
+header {
+    background-color: black;
+    width: 100%;
+    min-width: 80%;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.header_logo img {
+    border-radius: 50%;
+    border: 8px dotted #00FA9A;
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.header_logo ul{
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header_logo ul li {
+    opacity: 90%;
+    margin-right: 10px;
+    padding: 5px 0 0 0;
+}
+
+.header_logo h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #00FA9A;
+}
+
+/* Statics - Slideshow */
+
+.slideshow {
+    padding: 30px 20px 20px;
+    position: relative;
+    max-width: 48rem;
+    margin-bottom: 80px;
+}
+
+.slideshow_title h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.slideshow_title p {
+    padding-top: 15px;
+    text-align: left;
+    font-size: 2rem;
+    color: white;
+}
+
+.slideshow_itemlist {
+    margin-left: 100%;
+    margin-right: auto;
+    align-self: center;
+    display: flex;
+    width: 310px;
+    height: 310px;
+    border-radius: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 1rem 1rem 2.5rem -0.5rem #00FA9A;
+}
+
+.slideshow_itemlist img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slideshow_nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 100px;
+}
+
+.slideshow_nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #00FA9A;
+    opacity: 75%;
+    transition: opacity ease 500ms;
+}
+
+/* Statics - Marcas */
+
+.content_marcas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.content_marcas h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.marcas_item {
+    background-color: gray;
+    margin: 10px;
+    width: 380px;
+    height: 550px;
+    padding: 35px;
+    border-radius: 15px;
+    opacity: 80%;
+}
+
+.marcas_item img {
+    opacity: 60%;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.marcas_item figcaption h3 {
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.marcas_item figcaption p {
+    margin-top: 55px;
+    text-align: right;
+    font-size: 20px;
+    opacity: 0%;
+}
+
+/* Statics - Footer */
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 10px 30px 20px;
+    border-style: solid none none none;
+    border-color: gray;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+} 
+
+.footer_social a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer_social a img {
+    opacity: 70%;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+}
+
+.footer_nav {
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer_nav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 80%;
+}
+
+/* Statics - Copyright */
+
+.copyright {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.copyright p {
+    color: white;
+}
+
+#designer {
+    opacity: 70%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin: 0px 5px;
+}
+
+/* Hovers - Slideshow */
+
+.slideshow_nav a:hover {
+    opacity: 1;
+    width: 1rem;
+    height: 1rem;
+    transition: 0.5s;
+}
+
+/* Hovers - Content */
+
+.content_marcas img:hover {
+    opacity: 95%;
+    transition: 1s;
+}
+
+.marcas_item:hover {
+    width: 410px;
+    height: 600px;
+    opacity: 95%;
+    transition: 1s;
+}
+
+.marcas_item:hover figcaption p{
+    opacity: 100%;
+    transition: 1s;
+}
+
+/* Hovers - Footer */
+
+.footer_social a img:hover {
+    opacity: 100%;
+    box-shadow: 0.5px 0.5px 2px white;
+    transition: 250ms;
+}
+
+.footer_nav ul li a:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+/* Chrome, Safari and Opera */
+
+.slideshow_itemlist::-webkit-scrollbar {
+    display: none;
+}
